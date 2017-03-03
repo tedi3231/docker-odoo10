@@ -8,8 +8,8 @@ RUN set -x; \
 	 	libssl-dev \
 	 	libffi-dev \
 	 	python-dev \
-	&& pip install cryptography wechatpy 
+	&& pip install cryptography  
 
-# RUN chown -R odoo:odoo /var/lib/odoo
+RUN chown -R odoo:odoo /var/lib/odoo
 
 USER odoo
