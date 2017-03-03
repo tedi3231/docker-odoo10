@@ -11,5 +11,3 @@ RUN set -x; \
 	&& pip install wechatpy
 
 RUN chown -R odoo:odoo /var/lib/odoo
-
-USER odoo
