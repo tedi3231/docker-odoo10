@@ -9,4 +9,7 @@ RUN set -x; \
 	 	libffi-dev \
 	 	python-dev \
 	&& pip install wechatpy
+
+RUN chown -R odoo:odoo /var/lib/odoo
+
 USER odoo
