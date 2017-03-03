@@ -2,7 +2,8 @@ FROM odoo:10.0
 MAINTAINER tedi3231
 USER root
 RUN set -x; \
-	apt-get install -y --no-install-recommends \
+	apt-get update \
+	&& apt-get install -y --no-install-recommends \
 	 	build-essential \
 	 	libssl-dev \
 	 	libffi-dev \
