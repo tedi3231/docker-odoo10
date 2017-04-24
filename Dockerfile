@@ -6,5 +6,6 @@ RUN apt-get install -y --no-install-recommends build-essential libssl-dev libffi
 RUN pip install -U pip
 RUN pip install cryptography
 RUN pip install wechatpy
+RUN pip install redis
 #RUN chown -R odoo /var/lib/odoo
 #USER odoo
