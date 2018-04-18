@@ -12,4 +12,4 @@ RUN set -x; \
 	 && pip install pika
 
 RUN chown -R odoo:odoo /var/lib/odoo
-USER odoo
+#USER odoo
